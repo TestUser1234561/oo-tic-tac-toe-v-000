@@ -99,7 +99,7 @@ class TicTacToe
     return (draw?() || won?())
   end
 
-  def winner(board)
+  def winner
     if(over?(board) && won?(board))
       return board[won?(board)[0]]
     end
