@@ -33,7 +33,7 @@ class TicTacToe
 
   def move(index, value)
     if(valid_move?(index))
-      board[index] = value
+      @board[index] = value
       return true
     end
   end
