@@ -52,9 +52,9 @@ class TicTacToe
     end
   end
 
-  def turn_count(board)
+  def turn_count
     i = 0
-    board.each do |space|
+    @board.each do |space|
       if(space != " ")
         i += 1
       end
