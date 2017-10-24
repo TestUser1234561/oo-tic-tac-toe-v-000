@@ -107,9 +107,9 @@ class TicTacToe
 
   def play
     while(!over?()) do
-      turn(board)
+      turn()
     end
-    if(draw?(board))
+    if(draw?())
      puts "Cat's Game!"
     else
       puts "Congratulations #{winner(board)}!"
