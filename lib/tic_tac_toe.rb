@@ -40,10 +40,8 @@ class TicTacToe
   end
 
   def move(index, value)
-    if(valid_move?(index))
-      @board[index] = value
-      return true
-    end
+    @board[index] = value
+    return true
   end
 
   def position_taken?(index)
