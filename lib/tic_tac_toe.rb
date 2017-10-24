@@ -41,7 +41,6 @@ class TicTacToe
 
   def move(index, value)
     @board[index] = value
-    return true
   end
 
   def position_taken?(index)
