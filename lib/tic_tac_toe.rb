@@ -87,15 +87,15 @@ class TicTacToe
     return false
   end
 
-  def full?(board)
-    return !(board.include? " ")
+  def full?
+    return !(@board.include? " ")
   end
 
-  def draw?(board)
+  def draw?
     return (full?(board) && !won?(board))
   end
 
-  def over?(board)
+  def over?
     return (draw?(board) || won?(board))
   end
 
