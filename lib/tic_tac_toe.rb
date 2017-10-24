@@ -92,11 +92,11 @@ class TicTacToe
   end
 
   def draw?
-    return (full?(board) && !won?(board))
+    return (full?() && !won?())
   end
 
   def over?
-    return (draw?(board) || won?(board))
+    return (draw?() || won?())
   end
 
   def winner(board)
