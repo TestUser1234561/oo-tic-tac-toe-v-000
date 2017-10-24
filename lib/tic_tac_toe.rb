@@ -101,7 +101,7 @@ class TicTacToe
 
   def winner
     if(over?(board) && won?(board))
-      return board[won?(board)[0]]
+      return @board[won?()[0]]
     end
   end
 
