@@ -28,7 +28,7 @@ class TicTacToe
     if(!move(input_to_index(input)))
       turn
     end
-    display_board
+    display_board()
   end
 
   def move(board, index, value)
