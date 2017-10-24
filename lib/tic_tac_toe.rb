@@ -106,7 +106,7 @@ class TicTacToe
   end
 
   def play
-    while(!over?(board)) do
+    while(!over?()) do
       turn(board)
     end
     if(draw?(board))
