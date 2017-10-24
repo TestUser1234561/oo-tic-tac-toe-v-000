@@ -22,13 +22,13 @@ class TicTacToe
     return n.to_i - 1
   end
 
-  def turn(board)
+  def turn
     puts "Please enter 1-9:"
     input = gets.strip()
-    if(!move(board, input_to_index(input)))
-      turn(board)
+    if(!move(input_to_index(input)))
+      turn
     end
-    display_board(board)
+    display_board
   end
 
   def move(board, index, value)
@@ -115,5 +115,5 @@ class TicTacToe
       puts "Congratulations #{winner(board)}!"
     end
   end
-  
+
 end
