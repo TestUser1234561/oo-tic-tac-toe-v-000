@@ -58,6 +58,7 @@ class TicTacToe
     if((index > -1 && index < 9) && !position_taken?(index))
       return true
     end
+    return false
   end
 
   def turn_count
